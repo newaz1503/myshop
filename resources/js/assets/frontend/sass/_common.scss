@@ -1,0 +1,131 @@
+
+html{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden; 
+    background-color: #f2f2f2;
+}
+
+a,a:hover,a.active{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+ul,ol{
+    list-style-type: none;
+}
+.text-color{
+    color: var(--vz-primary) !important;
+}
+.bg-color{
+    background-color: var(--vz-primary) !important;
+}
+.border-col{
+    border-color: var(--vz-primary) !important;
+}
+.border-color{
+    border-color: var(--vz-primary) !important;
+}
+.border-radius-2{
+    border-radius: 2% !important;
+}
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,p,a{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.z-index-999{
+    z-index: 999 !important;
+}
+.position-inherit{
+    position: inherit !important;
+}
+.w-33{
+    width: 33.33333333333333333333333%!important;
+}
+.w-80px{
+    width: 80px !important;
+}
+.ps-15{
+    padding-left: 15px !important;
+}
+.card-box-shadow{
+    box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 12%)!important;
+}
+.shadow-sm {
+    box-shadow: 0 1px 3px rgba(3,0,71,.09)!important;
+    &:hover{
+        box-shadow: 0 8px 45px rgba(3,0,71,.09)!important;
+        transition: all .25s ease-in-out 0s;
+    }
+}
+.hover-scal{
+    transition: all .25s ease-in-out 0s;
+    &:hover{
+        transform: scale(1.08);
+        box-shadow: 0 8px 45px rgba(4, 0, 71, 0.05)!important;
+        transition: all .25s ease-in-out 0s;
+    }
+}
+.d-flex-column {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-align: left;
+}
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title_shape{
+    position:relative;
+    background-color: transparent;
+    &::after{
+     position: absolute;
+     content: '';
+     height: 2px;
+     width: 7%;
+     background-color: var(--vz-primary);
+     bottom: 0px;
+     left: 0px;
+    }
+}
+.z-index-999{
+    z-index: 999;
+}
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: white;
+    background-color: var(--vz-primary);
+    border-color: var(--vz-primary);
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color:var(--vz-primary);
+}
+.pre-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #ffffffb8 !important;
+    z-index: 999;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
